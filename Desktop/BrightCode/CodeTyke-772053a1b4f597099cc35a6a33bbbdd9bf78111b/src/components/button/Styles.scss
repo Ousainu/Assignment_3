@@ -1,0 +1,27 @@
+@import "../../styles/utils/colors";
+
+.submitButton {
+  display: flex;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: $grass-blade;
+  padding: 0 2em;
+  cursor: pointer;
+
+  .loaderIcon {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}
